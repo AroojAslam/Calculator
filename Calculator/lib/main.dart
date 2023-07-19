@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'components.dart';
+
 void main() {
   runApp(const Calculator());
 }
@@ -51,46 +53,18 @@ class _CalculatorState extends State<Calculator> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('C' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('%' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Icon(Icons.backspace_outlined),
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color:  Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('/' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
+                      buttons(num: 'C',onPress: (){
+
+                      },),
+                      buttons(num: '%',onPress: (){
+
+                      },),
+                      buttons(num: 'ICON',onPress: (){
+
+                      },),
+                      buttons(num: '/',onPress: (){
+
+                      },),
                     ],
                   ),
                   SizedBox(
@@ -99,46 +73,19 @@ class _CalculatorState extends State<Calculator> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('7' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('8' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('9' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color:  Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('X' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
+                      buttons(num: '7' ,onPress: (){
+
+                      },),
+                      buttons(num: '8',onPress: (){
+
+                      },),
+                      buttons(num: '9',onPress: (){
+
+                      },),
+                      buttons(num: 'x',onPress: (){
+
+                      },),
+
                     ],
                   ),
                   SizedBox(
@@ -147,46 +94,18 @@ class _CalculatorState extends State<Calculator> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('4' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('5' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('6' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color:  Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('-' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
+                      buttons(num: '4',onPress: (){
+
+                      },),
+                      buttons(num: '5',onPress: (){
+
+                      },),
+                      buttons(num: '6',onPress: (){
+
+                      },),
+                      buttons(num: '-',onPress: (){
+
+                      },),
                     ],
                   ),
                   SizedBox(
@@ -195,46 +114,18 @@ class _CalculatorState extends State<Calculator> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color:  Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('1' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color:  Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('2' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('3' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color:  Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('+' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
+                      buttons(num: '1',onPress: (){
+
+                      },),
+                      buttons(num: '2',onPress: (){
+
+                      },),
+                      buttons(num: '3',onPress: (){
+
+                      },),
+                      buttons(num: '+',onPress: (){
+
+                      },),
                     ],
                   ),
                   SizedBox(
@@ -243,46 +134,18 @@ class _CalculatorState extends State<Calculator> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('00' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('0' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('.' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 70,
-                        width: 70,
-                        decoration:BoxDecoration(
-                            color: Colors.pinkAccent.shade100,
-                            borderRadius: BorderRadius.circular(30)
-                        ) ,
-                        child:Text('=' ,style: TextStyle(fontSize: 25, )) ,
-                      ),
+                      buttons(num: '00',onPress: (){
+
+                      },),
+                      buttons(num: '0',onPress: (){
+
+                      },),
+                      buttons(num: '.',onPress: (){
+
+                      },),
+                      buttons(num: '=',onPress: (){
+
+                      },),
                     ],
                   ),
                   SizedBox(
