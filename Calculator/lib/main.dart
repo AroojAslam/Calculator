@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'components.dart';
 
 void main() {
-  runApp(const Calculator());
+  runApp( Calculator());
 }
 
 class Calculator extends StatefulWidget {
-  const Calculator({super.key});
+   Calculator({super.key});
+ var input= '';
+ var result= '';
 
   @override
   State<Calculator> createState() => _CalculatorState();
