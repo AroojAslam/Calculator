@@ -5,8 +5,9 @@ class buttons extends StatelessWidget {
   final String num ;
   final Color color;
   final VoidCallback onPress;
+  final Color textColor;
   const buttons({super.key, required this.num ,
-  required this.onPress , this.color=Colors.black26});
+  required this.onPress , this.color=Colors.white,this.textColor=Colors.black});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class buttons extends StatelessWidget {
           shape: BoxShape.circle,
             color: color,
         ) ,
-        child:Text(num ,style: TextStyle(fontSize: 25, )) ,
+        child:Text(num ,style: TextStyle(fontSize: 25,color: textColor )) ,
       ),
     );
   }

@@ -23,7 +23,7 @@ class _CalculatorState extends State<Calculator> {
       debugShowCheckedModeBanner: false,
       home:Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.pinkAccent.shade100,
+          backgroundColor: Colors.amber.shade700,
             title: Text('Calculator',style: TextStyle(color:Colors.black),)
         ),
         body: Container(
@@ -44,10 +44,10 @@ class _CalculatorState extends State<Calculator> {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                     ),
-                    child:Padding(padding:  EdgeInsets.symmetric(horizontal: 10),
+                    child:Padding(padding:  EdgeInsets.symmetric(horizontal: 15),
                     child: !showOutput?Text(''):
                     Text(userinput.toString(),
-                      style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black54),
+                      style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.black54),
                     ),),
                   ),
                   Container(
@@ -56,11 +56,11 @@ class _CalculatorState extends State<Calculator> {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                     ),
-                    child:Padding(padding:  EdgeInsets.symmetric(horizontal: 10),
+                    child:Padding(padding:  EdgeInsets.symmetric(horizontal: 15),
                       child:  !showOutput?Text(userinput.toString(),
-                        style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
                       ):Text(result.toString(),
-                        style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
                       )
                     ),
                   ),
@@ -99,7 +99,9 @@ class _CalculatorState extends State<Calculator> {
                             setState(() {
 
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
                         ],
                       ),
                       SizedBox(
@@ -135,7 +137,9 @@ class _CalculatorState extends State<Calculator> {
                             setState(() {
 
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
 
                         ],
                       ),
@@ -172,7 +176,9 @@ class _CalculatorState extends State<Calculator> {
                             setState(() {
 
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
                         ],
                       ),
                       SizedBox(
@@ -206,9 +212,10 @@ class _CalculatorState extends State<Calculator> {
                             showOutput=false;
                             userinput+='+';
                             setState(() {
-
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
                         ],
                       ),
                       SizedBox(
@@ -223,27 +230,33 @@ class _CalculatorState extends State<Calculator> {
                             setState(() {
 
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
                           buttons(num: '0',onPress: (){
                             showOutput=false;
                             userinput+='0';
                             setState(() {
 
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
                           buttons(num: '.',onPress: (){
                             showOutput=false;
                             userinput+='.';
                             setState(() {
 
                             });
-                          },),
+                          },color: Colors.grey.shade300,
+                            textColor: Colors.amber.shade900,
+                          ),
                           buttons(num: '=',onPress: (){
                             equal();
                             setState(() {
                             showOutput=true;
                             });
-                          },color: Colors.deepOrange,
+                          },color: Colors.amber.shade700,
                           ),
                         ],
                       ),
