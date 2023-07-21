@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 
 class buttons extends StatelessWidget {
   final String num ;
+  final Color color;
   final VoidCallback onPress;
   const buttons({super.key, required this.num ,
-  required this.onPress });
+  required this.onPress , this.color=Colors.black26});
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +17,12 @@ class buttons extends StatelessWidget {
         height: 70,
         width: 70,
         decoration:BoxDecoration(
-            color: Colors.grey.shade300,
-            borderRadius: BorderRadius.circular(30)
+          shape: BoxShape.circle,
+            color: color,
         ) ,
         child:Text(num ,style: TextStyle(fontSize: 25, )) ,
       ),
     );
   }
 }
+
