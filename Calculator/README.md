@@ -5,6 +5,7 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+![Pink 3D Mockups Sales Pitch Sales Presentation](https://github.com/AroojAslam/Calculator/assets/101873027/5e570ca4-294c-4930-9117-9c7d05cf55d3)
 
 A few resources to get you started if this is your first Flutter project:
 
